@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    font-family: "Anta", sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #bde0fe;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+}
+/* PAGE D'ACCUEIL */
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 5em;
+}
+
+.buttons {
+    margin-top: 45px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* FIN PAGE D'ACCUEIL */
+

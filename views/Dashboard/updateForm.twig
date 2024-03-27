@@ -1,0 +1,15 @@
+{% extends "dashboardBase.twig" %}
+
+{% block main %}
+<div id="updateForm">
+  <h2>Modifier Un Employer</h2>
+  <form action="/updateEmploye/{{employe.id}}" method="post" id="formEmploye" enctype="multipart/form-data">
+    <input type="text" id="nom" name="name" placeholder="Nom :" value="{{employe.name}}"><br>
+    <input type="text" id="fonction" name="fonction" placeholder="Fonction :" value="{{employe.fonction}}"><br>
+    <input type="file" id="photo" name="image" accept="image/*" placeholder="Photo :"value="{{employe.image}}"><br><br>
+    <button type="submit">Modifier</button>
+  </form>
+</div>
+{% endblock %}
+
+

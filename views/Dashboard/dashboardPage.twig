@@ -1,0 +1,63 @@
+{% extends "dashboardBase.twig" %}
+
+{% block main %}
+<div id="bouton">
+<h2>Gestion De Mes Employer</h2>
+<button class="ajouter-employe-btn" onclick="ouvrirPopup()">Ajouter un employé</button>
+</div>
+
+<div id="search">
+	<form action="/dashboardPage" method="GET" class="search-form">
+    <input type="text" name="search" placeholder="Rechercher employé" class="search-input">
+    <button type="submit" class="search-button">Rechercher</button>
+	</form>
+</div>
+
+<div id="popup" class="popup">
+{% include "Dashboard/addForm.twig" %}
+</div>
+
+
+<div id="employeContainer">
+		{% for employe in employes %}
+			<div class="employe-info">
+				<div>
+					<p>
+						<u>Nom de l'employé</u>
+						:
+					</p>
+					<p class="info">{{employe.name}}</p>
+				</div>
+				<div>
+					<p>
+						<u>Fonction</u>
+						:
+					</p>
+					<p class="info">{{employe.fonction}}</p>
+				</div>
+				<div>
+					<p>
+						<u>blâme</u>
+						:
+					</p>
+					<p class="info">{{employe.blame}}</p>
+				</div>
+				<div>
+					<div class="img">
+						<img src="/images/uploads/{{employe.image}}" alt="imageProjet">
+					</div>
+				</div>
+				<div class="boutton">
+					<a id="delete" href="/deleteEmploye/{{employe.id}}">Supprimer</a>
+					<a id="blame" href="/blameEmploye/{{employe.id}}">Blâmer</a>
+					<a id="update" href="/updateEmploye/{{employe.id}}">Modifier</a>
+				</div>
+                </div>
+                {% endfor %}
+			
+            {% endblock %}
+
+
+
+    
+

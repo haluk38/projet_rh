@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    font-family: "Anta", sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #bde0fe;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+  width: 100%;
+  margin-top: 10%;
+  text-align: center; 
+    
+}
+
+/* PAGE D'ACCUEIL */
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+h1 {
+    color: #333;
+    font-size: 5em;
+}
+h2{
+  font-size: xx-large;
+}
+.buttons {
+    margin-top: 45px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+/* FIN PAGE D'ACCUEIL */
+
+/* POPUP AJOUTS EMPLOYER*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.popup h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+.popup input[type="text"],
+.popup input[type="file"],
+.popup button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.popup input[type="text"],
+.popup input[type="file"] {
+  width: calc(100% - 22px);
+}
+.popup button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+  /* BOUTON AJOUTER UN EMPLOYER */
+  .ajouter-employe-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    
+  }
+  .ajouter-employe-btn:hover {
+    background-color: #45a049;
+  }
+  #bouton{
+    text-align: center;
+    padding-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  /* CARTE EMPLOYER  */
+
+  .employe-info {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0;
+    width: 250px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .employe-info div {
+    margin-bottom: 1rem;
+  }
+  
+  .employe-info p {
+    margin: 0;
+  }
+  
+  .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .boutton {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#delete, #update, #blame {
+    color: white;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#delete {
+    background-color: red;
+}
+
+#update {
+    background-color: #4CAF50;
+}
+
+#blame {
+    background-color: #f9dc5c;
+}
+
+#delete:hover, #update:hover, #blame:hover {
+    transform: scale(1.1);
+}
+
+#delete:hover {
+    background-color: red;
+}
+
+#update:hover {
+    background-color: #4CAF50;
+}
+
+#blame:hover {
+    background-color: #f9dc5c;
+}
+  #employeContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .info{
+    font-size: x-large;
+  }
+
+  /* FORMULAIRE DE MODIFICATION */
+  #updateForm {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #updateForm h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #updateForm input[type="text"],
+  #updateForm input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #updateForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #updateForm button:hover {
+    background-color: #0056b3;
+  }
+
+  /* BARRE DE RECHERCHE  */
+  .search-form {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+#search{
+  margin-left: 1%;
+}
+ 
